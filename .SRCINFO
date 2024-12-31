@@ -1,0 +1,19 @@
+pkgbase = ditana-network
+	pkgdesc = Ditana network configuration
+	pkgver = 1.06
+	pkgrel = 1
+	url = https://ditana.org
+	arch = any
+	license = AGPL-3.0-or-later AND LGPL-2.1-or-later AND GPL-2.0-or-later AND GPL-3.0-or-later AND CC0-1.0 AND MIT-0
+	depends = networkmanager
+	depends = inetutils
+	depends = systemd
+	backup = etc/NetworkManager/conf.d/dns.conf
+	source = dns.conf
+	source = 80-ditana.conf
+	source = 90-ditana.conf
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = ditana-network
