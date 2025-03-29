@@ -43,14 +43,26 @@ Ditana GNU/Linux employs two key DNS security technologies:
    - **Privacy:** Shields DNS queries from third-party monitoring.
    - **Security:** Prevents tampering with DNS queries in transit.
 
-### Cloudflare and Quad9 DNS Servers
+### Quad9 and Cloudflare DNS Servers
 
 By default, Ditana configures the following DNS servers:
 
-- **Primary:** Cloudflare DNS (IPv4: `1.1.1.1`, `1.0.0.1`, and IPv6 equivalents)
-- **Fallback:** Quad9 DNS (IPv4: `9.9.9.9`, `149.112.112.112`, and IPv6 equivalents)
+- **Primary:** Quad9 DNS (IPv4: `9.9.9.9`, `149.112.112.112`, and IPv6 equivalents: `2620:fe::fe`, `2620:fe::9`)
+- **Fallback:** Cloudflare DNS (IPv4: `1.1.1.1`, `1.0.0.1`, and IPv6 equivalents: `2606:4700:4700::1111`, `2606:4700:4700::1001`)
 
-Cloudflare’s DNS servers are chosen for their speed and privacy focus, ensuring that DNS queries are handled securely and efficiently. Quad9 offers a reliable fallback with additional threat blocking features.
+**Quad9** was chosen as the primary DNS service due to its outstanding security and privacy features:
+- Automatic blocking of domain queries to known threats such as malware, phishing, and botnets
+- No logging of user IP addresses
+- Operated as a Swiss foundation with a clear focus on privacy
+- Supported by over 25 threat intelligence providers for current threat information
+- Global infrastructure with more than 230 resolver clusters in over 110 countries
+
+**Cloudflare** serves as a reliable fallback DNS service and offers:
+- Exceptionally fast response times
+- Proven and stable infrastructure
+- Broad global availability
+
+Both DNS services fully support the security features configured in Ditana, such as DNSSEC and DNS-over-TLS, ensuring secure and private DNS resolution. Both services are also fully compliant with GDPR (General Data Protection Regulation) requirements.
 
 ### Why This Matters
 

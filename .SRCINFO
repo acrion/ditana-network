@@ -1,6 +1,6 @@
 pkgbase = ditana-network
 	pkgdesc = Ditana network configuration
-	pkgver = 1.06
+	pkgver = 1.07
 	pkgrel = 1
 	url = https://ditana.org
 	arch = any

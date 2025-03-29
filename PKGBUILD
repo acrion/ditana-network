@@ -1,7 +1,7 @@
 # Maintainer: Stefan Zipproth <s.zipproth@ditana.org>
 
 pkgname=ditana-network
-pkgver=1.06
+pkgver=1.07
 pkgrel=1
 pkgdesc="Ditana network configuration"
 arch=(any)
