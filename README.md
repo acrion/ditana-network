@@ -102,8 +102,8 @@ sudo pacman -S ditana-network
    [Resolve]
    DNS=
    FallbackDNS=
-   DNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
-   FallbackDNS=9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
+   DNS=9.9.9.9 149.112.112.112 2620:fe::fe 2620:fe::9
+   FallbackDNS=1.1.1.1 1.0.0.1 2606:4700:4700::1111 2606:4700:4700::1001
    DNSSEC=allow-downgrade
    DNSOverTLS=opportunistic
    Domains=~.
