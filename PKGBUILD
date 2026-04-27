@@ -1,14 +1,14 @@
 # Maintainer: Stefan Zipproth <s.zipproth@ditana.org>
 
 pkgname=ditana-network
-pkgver=1.07
+pkgver=1.08
 pkgrel=1
 pkgdesc="Ditana network configuration"
 arch=(any)
 url="https://ditana.org"
 license=('AGPL-3.0-or-later AND LGPL-2.1-or-later AND GPL-2.0-or-later AND GPL-3.0-or-later AND CC0-1.0 AND MIT-0')
 conflicts=()
-depends=(networkmanager inetutils systemd)
+depends=(networkmanager inetutils systemd iptables)
 makedepends=()
 backup+=(
     'etc/NetworkManager/conf.d/dns.conf'
